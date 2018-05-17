@@ -3,26 +3,19 @@
 		<title>BATHROOMS</title>
 		<link rel="stylesheet" href="/assets/sad.css">
 	</head>
-	<body>
+	<body id="app">
         <div class="bathroom1">
-            <div id="unoccupied">
-                <h1>Unoccupied</h1>
-            </div>
-            <div id="occupied">
-                <h1>Occupied</h1>
-            </div>
+            <h1>Bathroom 1 (office)</h1>
+            <h3>{{bathroom1}}</h3>
         </div>
         <div class="bathroom2">
-            <div id="unoccupied2">
-                <h1>Unoccupied</h1>
-            </div>
-            <div id="occupied2">
-                <h1>Occupied</h1>
-            </div>
+            <h1>Bathroom 2 (hallway)</h1>
+            <h3>{{bathroom2}}</h3>
         </div>
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
 		<script src="/socket.io/socket.io.js"></script>
-		<script src="assets/script.js"></script>
+		<script src="assets/script-dev.js"></script>
 	</body>
 
 </html>

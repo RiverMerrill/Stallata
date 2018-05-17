@@ -6,7 +6,6 @@ const gpio = require('onoff').Gpio;
 const io = require('socket.io')(server);
 const sensor = new gpio(2, 'in', 'both', {debounceTimeout: 1500});
 
-
 app.use('/assets', express.static(path.join(__dirname, 'assets')));
 app.get('/', function(req, res){
 	res.sendFile(__dirname + '/index.html');
