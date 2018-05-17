@@ -1,5 +1,5 @@
 var socket = io.connect('http://10.0.0.62:1337');
-var socket2 = io.connect('http://10.0.0.52:1337');
+var socket2 = io.connect('http://10.0.0.64:1337');
 socket2.emit('connection', _ => {
 	console.log('connected2');
 });

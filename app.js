@@ -10,6 +10,9 @@ app.use('/assets', express.static(path.join(__dirname, 'assets')));
 app.get('/', function(req, res){
 	res.sendFile(__dirname + '/index.html');
 })
+app.get('/test', function(req, res){
+	res.sendFile(__dirname + '/test.html');
+})
 io.on('connection', _ => {
 	sensor.read((err, val) => {
 		if(val == 0){
