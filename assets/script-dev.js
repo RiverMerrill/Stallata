@@ -7,7 +7,7 @@ let app = new Vue({
 	}
 })
 var socket = io.connect('http://10.0.0.62:1337');
-var socket2 = io.connect('http://10.0.0.52:1337');
+var socket2 = io.connect('http://10.0.0.64:1337');
 socket2.emit('connection', _ => {
 	console.log('connected2');
 });
@@ -17,16 +17,16 @@ socket.emit('connection', _ => {
 socket.on('update', function(data){
 	console.log(data);
 	if(data.occupied){
-		app.data.bathroom1 = 'occupied';
+		app.bathroom1 = 'occupied';
 	} else {
-		app.data.bathroom1 = 'unoccupied';
+		app.bathroom1 = 'unoccupied';
 	}
 })
 socket2.on('update', function(data){
 	console.log(data);
 	if(data.occupied){
-		app.data.bathroom2 = 'occupied';
+		app.bathroom2 = 'occupied';
 	} else {
-		app.data.bathroom2 = 'unoccupied';
+		app.bathroom2 = 'unoccupied';
 	}
 })
