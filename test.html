@@ -1,23 +1,35 @@
 <html>
-	<head>
-		<title>BATHROOMS</title>
-		<link rel="stylesheet" href="/assets/sad.css">
-	</head>
-	<body>
-        <div id="app">
-            <div class="bathroom1">
-                <h1>Bathroom 1 (office)</h1>
-                <h3>{{bathroom1}}</h3>
-            </div>
-            <div class="bathroom2">
-                <h1>Bathroom 2 (hallway)</h1>
-                <h3>{{bathroom2}}</h3>
-            </div>
-        </div>
-        <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-        <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
-		<script src="/socket.io/socket.io.js"></script>
-		<script src="assets/script-dev.js"></script>
-	</body>
+
+<head>
+    <title>BATHROOMS</title>
+    <link rel="stylesheet" href="/assets/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,400italic|Material+Icons">
+    <link rel="stylesheet" href="https://unpkg.com/vue-material@beta/dist/vue-material.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/vue-material@beta/dist/theme/default.css">
+</head>
+
+<body>
+    <div id="app" class="md-layout">
+        <md-card class="bathroom1 md-layout-item md-elevation-6">
+            <md-card-header>
+                <div class="md-title">Bathroom 1 (office)</div>
+            </md-card-header>
+            <h3>{{bathroom1}}</h3>
+        </md-card>
+        <div class="md-layout-item"></div>
+        <md-card class="bathroom2 md-layout-item md-elevation-6">
+            <md-card-header>
+                <div class="md-title">Bathroom 2 (hallway)</div>
+            </md-card-header>
+            <h3>{{bathroom2}}</h3>
+        </md-card>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.js"></script>
+    <script src="https://unpkg.com/vue-material@beta"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="assets/script-dev.js"></script>
+</body>
 
 </html>
