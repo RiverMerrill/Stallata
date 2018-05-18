@@ -1,4 +1,4 @@
-Vue.use(Vuetify);
+Vue.use('Vuetify');
 let app = new Vue({
 	el: '#app',
 	data: {

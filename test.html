@@ -10,22 +10,22 @@
 
 <body>
     <div id="app" >
-	    <h1 class="md-display-4">BATHROOMS @ ALLATA</h1>
-	    <div class="md-layout">
-		<md-card class="bathroom1 md-layout-item md-elevation-6">
-		    <md-card-header>
-			<div class="md-title">Bathroom 1 (office)</div>
-		    </md-card-header>
-		    <h3>{{bathroom1}}</h3>
-		</md-card>
-		<div class="md-layout-item"></div>
-		<md-card class="bathroom2 md-layout-item md-elevation-6">
-		    <md-card-header>
-			<div class="md-title">Bathroom 2 (hallway)</div>
-		    </md-card-header>
-		    <h3>{{bathroom2}}</h3>
-		</md-card>
-	    </div>
+	    <v-app>
+		    <v-container>
+		    <h1>BATHROOMS @ ALLATA</h1>
+			<v-card class="bathroom1">
+				<div class="md-title">Bathroom 1 (office)</div>
+			    <h3>{{bathroom1}}</h3>
+			</md-card>
+			<div class="md-layout-item"></div>
+			<md-card class="bathroom2 md-layout-item md-elevation-6">
+			    <md-card-header>
+				<div class="md-title">Bathroom 2 (hallway)</div>
+			    </md-card-header>
+			    <h3>{{bathroom2}}</h3>
+			</md-card>
+		    </v-container>
+	    </v-app>
     </div>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
