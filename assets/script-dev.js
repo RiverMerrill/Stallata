@@ -1,4 +1,4 @@
-Vue.use(VueMaterial.default);
+Vue.use(Vuetify);
 let app = new Vue({
 	el: '#app',
 	data: {
